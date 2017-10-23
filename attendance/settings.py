@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'attendance.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'bzzdr87hf',
-        'USER': 'unuiqymnsc8yqatt',
-        'PASSWORD': 'oZ0g4ndmwRmPXZNeB1X',
-        'HOST': 'bzzdr87hf-mysql.services.clever-cloud.com',   # Or an IP Address that your DB is hosted on
+        'NAME': 'temp23',
+        'USER': 'user',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }
@@ -128,5 +128,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)	
