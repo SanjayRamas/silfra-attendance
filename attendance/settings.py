@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'attendance.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'd90pg4mie4amd8',
-        'USER': 'bpawlzjtivrlia',
-        'PASSWORD': 'e40262c4510f00c083cadb5dc30332cdb833be2a017692372ce3224f8de6543d',
-        'HOST': 'ec2-107-21-113-16.compute-1.amazonaws.com',   # Or an IP Address that your DB is hosted on
-        'PORT': '5432',
+        'NAME': 'bzzdr87hf',
+        'USER': 'unuiqymnsc8yqatt',
+        'PASSWORD': 'oZ0g4ndmwRmPXZNeB1X',
+        'HOST': 'bzzdr87hf-mysql.services.clever-cloud.com',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
     }
 }
 #DATABASES = {
